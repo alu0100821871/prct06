@@ -15,6 +15,9 @@ print 'El valor de PI con 35 decimales: %.35f\n' % pi
 import sys
 veces = int (sys.argv[2])
 intervalo = int (sys.argv[1])
+while intervalo <= 0:
+  print 'No se puede calcular PI aproximado con el intervalo introducido'
+  intervalo = int (raw_input('Introduzca un nuevo intervalo: '))
 l = []
 print 'i.                 PI35DT                                lista i                                PI35DT - lista i' 
 print '\n'
